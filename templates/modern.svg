@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" data-template="modern" data-palettes="{&quot;navy&quot;: {&quot;paper&quot;: &quot;#FFFFFF&quot;, &quot;ink&quot;: &quot;#1B2440&quot;, &quot;accent&quot;: &quot;#E4B363&quot;}, &quot;mono&quot;: {&quot;paper&quot;: &quot;#FAFAF7&quot;, &quot;ink&quot;: &quot;#111111&quot;, &quot;accent&quot;: &quot;#9A9A9A&quot;}}" data-fonts="Futura">
+<rect data-color="paper" x="0" y="0" width="500" height="700"/>
+<rect data-color="ink" x="0" y="0" width="500" height="262"/>
+<text data-slot="headline" data-box="50 48 400 40" data-font="Futura" data-weight="normal" data-style="normal" data-min="11" data-max="14" data-lines="2" data-align="start" data-color="accent" data-transform="upper" data-tracking="3" data-voice="standard" data-lh="1.2"/>
+<text data-slot="names" data-box="50 92 400 150" data-font="Futura" data-weight="bold" data-style="normal" data-min="28" data-max="56" data-lines="3" data-align="start" data-color="paper" data-transform="upper" data-tracking="0" data-voice="standard" data-lh="1.05"/>
+<rect data-color="accent" x="50" y="292" width="60" height="4"/>
+<text data-slot="event_line" data-box="50 312 400 62" data-font="Futura" data-weight="normal" data-style="normal" data-min="13" data-max="17" data-lines="3" data-align="start" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+<text data-slot="date" data-box="50 400 400 36" data-font="Futura" data-weight="bold" data-style="normal" data-min="18" data-max="26" data-lines="1" data-align="start" data-color="ink" data-transform="none" data-tracking="0" data-voice="modern" data-lh="1.2"/>
+<text data-slot="time" data-box="50 440 400 28" data-font="Futura" data-weight="normal" data-style="normal" data-min="14" data-max="18" data-lines="1" data-align="start" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+<text data-slot="venue" data-box="50 488 400 52" data-font="Futura" data-weight="bold" data-style="normal" data-min="14" data-max="18" data-lines="2" data-align="start" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+<text data-slot="city" data-box="50 540 400 26" data-font="Futura" data-weight="normal" data-style="normal" data-min="11" data-max="14" data-lines="1" data-align="start" data-color="accent" data-transform="upper" data-tracking="2" data-voice="standard" data-lh="1.2"/>
+<text data-slot="rsvp" data-box="50 620 400 40" data-font="Futura" data-weight="normal" data-style="normal" data-min="10" data-max="12" data-lines="2" data-align="start" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+</svg>

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.claude/
+.DS_Store
+data/smoke/
+data/orders.jsonl
+data/corrections.jsonl
+data/*.log
+data/sft_v2/
+adapters/0*_adapters.safetensors
+adapters_v2/

@@ -1,0 +1,135 @@
+{
+ "rules/test_seen": {
+  "n": 100,
+  "json_valid": 1.0,
+  "order_exact": 0.12,
+  "fields": {
+   "event_type": 1.0,
+   "names": 0.45,
+   "headline": 0.69,
+   "date": 1.0,
+   "time": 0.89,
+   "venue": 0.38,
+   "city": 1.0,
+   "age": 1.0,
+   "rsvp": 0.95,
+   "theme": 0.99
+  },
+  "policy": {
+   "auto_approve_rate": 0.74,
+   "approved_accuracy": 0.12162162162162163,
+   "errors_caught": 0.26136363636363635
+  }
+ },
+ "rules/test_heldout": {
+  "n": 200,
+  "json_valid": 1.0,
+  "order_exact": 0.0,
+  "fields": {
+   "event_type": 1.0,
+   "names": 0.565,
+   "headline": 0.61,
+   "date": 1.0,
+   "time": 0.915,
+   "venue": 0.085,
+   "city": 1.0,
+   "age": 0.96,
+   "rsvp": 1.0,
+   "theme": 0.985
+  },
+  "policy": {
+   "auto_approve_rate": 0.795,
+   "approved_accuracy": 0.0,
+   "errors_caught": 0.205
+  }
+ },
+ "finetuned/test_seen": {
+  "n": 100,
+  "json_valid": 1.0,
+  "order_exact": 0.97,
+  "fields": {
+   "event_type": 1.0,
+   "names": 1.0,
+   "headline": 0.99,
+   "date": 1.0,
+   "time": 1.0,
+   "venue": 1.0,
+   "city": 0.98,
+   "age": 1.0,
+   "rsvp": 1.0,
+   "theme": 1.0
+  },
+  "policy": {
+   "auto_approve_rate": 0.82,
+   "approved_accuracy": 1.0,
+   "errors_caught": 1.0
+  }
+ },
+ "finetuned/test_heldout": {
+  "n": 200,
+  "json_valid": 1.0,
+  "order_exact": 0.96,
+  "fields": {
+   "event_type": 1.0,
+   "names": 1.0,
+   "headline": 0.995,
+   "date": 0.99,
+   "time": 1.0,
+   "venue": 0.99,
+   "city": 1.0,
+   "age": 0.99,
+   "rsvp": 1.0,
+   "theme": 0.995
+  },
+  "policy": {
+   "auto_approve_rate": 0.68,
+   "approved_accuracy": 1.0,
+   "errors_caught": 1.0
+  }
+ },
+ "base_2shot/test_seen": {
+  "n": 100,
+  "json_valid": 1.0,
+  "order_exact": 0.17,
+  "fields": {
+   "event_type": 0.81,
+   "names": 0.97,
+   "headline": 0.89,
+   "date": 0.76,
+   "time": 0.94,
+   "venue": 0.99,
+   "city": 0.98,
+   "age": 0.99,
+   "rsvp": 0.78,
+   "theme": 0.33
+  },
+  "policy": {
+   "auto_approve_rate": 0.02,
+   "approved_accuracy": 1.0,
+   "errors_caught": 1.0
+  }
+ },
+ "base_2shot/test_heldout": {
+  "n": 100,
+  "json_valid": 1.0,
+  "order_exact": 0.1,
+  "fields": {
+   "event_type": 0.83,
+   "names": 0.95,
+   "headline": 0.86,
+   "date": 0.79,
+   "time": 0.86,
+   "venue": 0.96,
+   "city": 0.97,
+   "age": 0.97,
+   "rsvp": 0.8,
+   "theme": 0.31
+  },
+  "policy": {
+   "auto_approve_rate": 0.01,
+   "approved_accuracy": 1.0,
+   "errors_caught": 1.0
+  }
+ },
+ "threshold": 0.92
+}

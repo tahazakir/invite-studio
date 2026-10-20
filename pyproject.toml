@@ -1,0 +1,11 @@
+[project]
+name = "invite-studio"
+version = "0.1.0"
+description = "Free-text party and wedding orders in, print-ready SVG invitations out: a LoRA fine-tuned small LLM, an SVG template layout engine, and confidence-gated review."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.151.0",
+    "fonttools>=4.67.0",
+    "mlx-lm>=0.32.2",
+    "uvicorn>=0.54.0",
+]

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700" data-template="classic" data-palettes="{&quot;gold&quot;: {&quot;paper&quot;: &quot;#FBF7F0&quot;, &quot;ink&quot;: &quot;#3B3226&quot;, &quot;accent&quot;: &quot;#B08D57&quot;}, &quot;blush&quot;: {&quot;paper&quot;: &quot;#FFF6F4&quot;, &quot;ink&quot;: &quot;#4A2E2E&quot;, &quot;accent&quot;: &quot;#C98B8B&quot;}}" data-fonts="Didot,Snell Roundhand">
+<rect data-color="paper" x="0" y="0" width="500" height="700"/>
+<rect data-color="accent" data-paint="stroke" x="24" y="24" width="452" height="652" fill="none" stroke-width="1.5"/>
+<rect data-color="accent" data-paint="stroke" x="34" y="34" width="432" height="632" fill="none" stroke-width="0.6"/>
+<g data-procedural="flourish" data-box="150 70 200 30" data-color="accent"/>
+<text data-slot="headline" data-box="70 110 360 50" data-font="Didot" data-weight="normal" data-style="italic" data-min="13" data-max="19" data-lines="2" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+<text data-slot="names" data-box="64 165 372 150" data-font="Snell Roundhand" data-weight="normal" data-style="normal" data-min="30" data-max="62" data-lines="3" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.05"/>
+<text data-slot="event_line" data-box="70 320 360 64" data-font="Didot" data-weight="normal" data-style="italic" data-min="12" data-max="16" data-lines="3" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+<g data-procedural="flourish" data-box="190 392 120 18" data-color="accent"/>
+<text data-slot="date" data-box="60 416 380 48" data-font="Didot" data-weight="normal" data-style="normal" data-min="13" data-max="18" data-lines="2" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="formal" data-lh="1.2"/>
+<text data-slot="time" data-box="60 466 380 28" data-font="Didot" data-weight="normal" data-style="italic" data-min="12" data-max="16" data-lines="1" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="formal" data-lh="1.2"/>
+<text data-slot="venue" data-box="60 504 380 56" data-font="Didot" data-weight="normal" data-style="normal" data-min="13" data-max="18" data-lines="2" data-align="middle" data-color="ink" data-transform="upper" data-tracking="1.5" data-voice="standard" data-lh="1.2"/>
+<text data-slot="city" data-box="60 562 380 26" data-font="Didot" data-weight="normal" data-style="normal" data-min="11" data-max="14" data-lines="1" data-align="middle" data-color="accent" data-transform="upper" data-tracking="3" data-voice="standard" data-lh="1.2"/>
+<text data-slot="rsvp" data-box="80 610 340 40" data-font="Didot" data-weight="normal" data-style="italic" data-min="10" data-max="12" data-lines="2" data-align="middle" data-color="ink" data-transform="none" data-tracking="0" data-voice="standard" data-lh="1.2"/>
+</svg>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invite Studio</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark">✦</span>
+    <div>
+      <h1>Invite Studio</h1>
+      <p>Free-text orders in, print-ready SVG invitations out</p>
+    </div>
+  </div>
+  <nav>
+    <button class="tab active" data-tab="studio">Studio</button>
+    <button class="tab" data-tab="queue">Review queue <span id="qcount" class="pill">0</span></button>
+    <button class="tab" data-tab="monitor">Monitoring</button>
+  </nav>
+</header>
+
+<main>
+  <!-- STUDIO -->
+  <section id="studio" class="view active">
+    <div class="col order">
+      <h2>1. Customer order</h2>
+      <label class="lbl">Sample orders</label>
+      <select id="samples"><option value="">Pick a sample…</option></select>
+      <label class="lbl" for="otext">Personalization text, exactly as the customer typed it</label>
+      <textarea id="otext" rows="9" placeholder="e.g. wedding invites for Sarah & Ahmed, 14th june 4pm at The Grand Hall, Lahore. sage green please"></textarea>
+      <div class="row">
+        <div>
+          <label class="lbl" for="odate">Order date</label>
+          <input id="odate" type="date">
+        </div>
+        <div>
+          <label class="lbl">Extractor</label>
+          <div class="seg" id="method">
+            <button data-m="finetuned" class="on">Fine-tuned model</button>
+            <button data-m="rules">Regex rules</button>
+          </div>
+        </div>
+      </div>
+      <button id="go" class="primary">Generate invitation</button>
+      <p class="hint" id="status"></p>
+      <details class="raw"><summary>Raw model output</summary><pre id="raw"></pre></details>
+    </div>
+
+    <div class="col preview">
+      <div class="preview-head">
+        <h2>2. Design</h2>
+        <button id="dl" class="ghost" disabled>Download SVG</button>
+      </div>
+      <div id="canvas" class="canvas empty"><p>The invitation will appear here.</p></div>
+      <div id="themes" class="themes"></div>
+    </div>
+
+    <div class="col fields">
+      <div id="decision" class="decision hidden"></div>
+      <h2>3. Extracted fields <span class="sub">edit to correct</span></h2>
+      <form id="form" class="form"></form>
+      <h3>Checks</h3>
+      <ul id="checks" class="checks"></ul>
+      <div class="actions">
+        <button id="approve" class="primary" disabled>Approve</button>
+        <button id="correct" class="ghost" disabled>Save correction</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEUE -->
+  <section id="queue" class="view">
+    <h2>Orders waiting for a human</h2>
+    <p class="hint">Orders land here when a check fails or the model's least-confident field is below the threshold. Fixes saved here go to <code>data/corrections.jsonl</code> and into the next training run.</p>
+    <div id="qlist" class="qlist"></div>
+  </section>
+
+  <!-- MONITOR -->
+  <section id="monitor" class="view">
+    <h2>Monitoring</h2>
+    <div id="kpis" class="kpis"></div>
+    <div class="grid2">
+      <div class="card"><h3>Model confidence (least-confident field per order)</h3><div id="hist" class="hist"></div></div>
+      <div class="card"><h3>Why orders went to review</h3><div id="fails" class="bars"></div></div>
+      <div class="card"><h3>Fields humans corrected</h3><div id="fixed" class="bars"></div></div>
+      <div class="card"><h3>Offline evaluation</h3><div id="evaltbl"></div></div>
+    </div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

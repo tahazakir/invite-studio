@@ -62,9 +62,10 @@ def index():
 @app.get("/api/samples")
 def samples():
     rows = [json.loads(l) for l in (DATA / "test_heldout.jsonl").read_text().splitlines()]
-    picks = [rows[i] for i in (0, 3, 7, 12, 21, 30)]
+    picks = [r for r in rows if "taha" not in r["text"].lower()][:6]
     hand = [
         {"order_date": "2026-10-20", "text": "hiii!! invites for edward & vivian 💍 the nuptials are on the 14th of feb, 7.30pm at The Savoy Ballroom, London. top should say Together with their families. sage green please, my mum loves greenery"},
+        {"order_date": "2026-10-20", "text": "Hi! Invites for Emma's 30th birthday please. Saturday 6 March 2027 at 7pm, The Glasshouse, Manchester. Top should say Let's party! and add RSVP to Olivia by February 20. colorful confetti please"},
         {"order_date": "2026-10-20", "text": "Order for my son's party - Bartholomew is turning 5!! Saturday 9 jan 2027, 2pm, Bounce House Party Zone (Karachi). RSVP to Hina at 0321-7654321. bright and fun colours"},
     ]
     return [{"order_date": r["order_date"], "text": r["text"]} for r in hand + picks]
